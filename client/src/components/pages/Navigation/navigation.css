@@ -1,0 +1,133 @@
+.nav-wrapper{
+    overflow: hidden;
+    width: 100%;
+}
+nav{
+    position: relative;
+    display: block;
+    padding: 10px;
+    padding-top: 22px;
+    color: #fff;
+}
+
+.nav-fixed{
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 10;
+    height: 60px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.3);
+}
+.nav-fixed nav{
+    color: rgba(38, 38, 38,1);;    
+}
+.nav-relative{
+    position: absolute;
+    z-index: 50;
+    top:0;
+    left: 0;
+}
+.nav-relative .menu:after{
+    background-color: #fff;
+}
+ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+nav a{
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+.logo{
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+.active{
+    background-color: rgba(38, 38, 38,1);;
+    color: white !important;
+    padding: 2px 5px; 
+}
+
+@media only screen and (max-width: 600px) {
+    .burger-container {
+        position: relative;
+        cursor: pointer;
+        
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+        box-shadow: 0px 2px 2px rgba(0,0,0,0.7);
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+    
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-5.5px, -8px);
+        transform: rotate(45deg) translate(-5.5px, -8px);
+    }
+    .burger-wrapper{
+        position: fixed;
+        display: block;
+        top:15px;
+        right:10px;
+        width: 50px;
+        height: 50px;
+        z-index: 1000;
+    }
+    nav.container{
+        position: fixed;
+        display: block;
+        z-index: 100;
+        top:0;
+        left:0;
+        width: 80vw;
+        height: 100vh;
+        background-color: rgba(255,255,255,1);
+        transform: translateX(-100%);
+        transition: 0.3s transform ease-out;
+    }
+    .overlay:before{
+        content: '';
+        position: fixed;
+        display: block;
+        z-index: 80;
+        top:0;
+        left:0;
+        width: 100vw;
+        height: 100vh; 
+        background-color: rgba(0,0,0,.5)
+    }
+    nav.container ul{
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+    nav.container ul li{
+        display: inline-block;
+        width: 100%;
+        font-size: 2.5rem;
+        color: #e1b53c 
+    }
+    .show{
+        transform: translateX(0) !important;
+    }
+    .menu:after{
+        background-color: #e1b53c !important;
+        height: 5px;
+    }
+}

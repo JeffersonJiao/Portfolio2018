@@ -1,0 +1,92 @@
+.header-wrapper{
+    position: relative;
+    background-color: #222022;
+    height: 600px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+}
+.container-inside{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5)
+}
+.header-wrapper h1{
+    position: absolute;
+    top:100px;
+    right: 50px;
+    display: block;
+    text-align: right;
+    color: #eafc40;
+    font-weight: bold;
+    letter-spacing: 3px;
+    overflow: hidden;
+    font-size: 8rem;
+}
+.header-wrapper p{
+    display: inline-block;
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #c0f9fd;
+    letter-spacing: 5px;
+}
+
+.header-wrapper h4{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 250px;
+    margin-left: -40px;
+    text-align: center;
+    color: #ffe341;
+    font-size:1rem;
+    font-family: 'Open Sans', sans-serif !important;
+    transform: rotate(90deg);
+}
+.header-wrapper h4:hover{
+    letter-spacing: 8px;
+     margin-left: -120px; 
+}
+.header-inside{
+    margin-top: 100px;
+}
+.profile-picture{
+    position: absolute;
+    display: inline-block;
+    bottom:0px;
+    height: 200px;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    border-radius: 50%;
+    background-color: yellow;
+    background-image: url('../../../assets/images/lol.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+.profile-picture-half{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    bottom: 0px;
+}
+@media only screen and (max-width: 600px) {
+    .header-wrapper{
+        min-height: 100vh;
+        height: 100vh;
+    }
+
+    .header-wrapper h1{
+        font-size: 4rem;
+    }
+}

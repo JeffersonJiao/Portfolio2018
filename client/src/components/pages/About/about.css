@@ -1,0 +1,199 @@
+
+.about-wrapper{
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+    margin-bottom: 100px;
+}
+.about-wrapper .container-fluid{
+    margin-top: 50px;
+}
+.about-wrapper h1{
+    position: absolute;
+    width: 100%;
+    top:-20px;
+    text-align: left;
+    font-size: 7rem;
+    font-weight: bold;
+    color: rgba(225,181,60,0.3);
+    overflow: hidden;
+}
+.about-first, .about-second{
+    padding-bottom: 100px;
+}
+
+.about-items{
+    background-color: #eee;
+    text-align: left;
+    padding: 10px 20px;
+}
+.about-intro{
+    background-color: transparent;
+    text-align: justify;
+}
+.about-intro h2{
+    color: rgba(38, 38, 38,1);
+}
+.about-items p{
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(38, 38, 38,1);
+    line-height: 1.6;
+    font-size: 15px;
+}
+.item-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align:left;
+    min-height: 150px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 5px;
+}
+button{
+    cursor: pointer;
+}
+.about-skills{
+    background: rgba(225,181,60,0.8);
+    min-height: 100px;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+.about-skills h5{
+    color: rgba(38, 38, 38,1);
+}
+.other-skills-wrapper{
+    background-image: linear-gradient(0deg,rgba(38, 38, 38,0.3),rgba(38, 38, 38,0.3)),url(../../../assets/images/skillsbg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 100px;
+}
+.CircularProgressbar-path{ 
+    stroke: #e1b53c !important; 
+    -o-transition: 3s !important;
+    -ms-transition:3s !important;
+    -moz-transition:3s !important;
+    -webkit-transition:3s !important;
+    transition:3s !important;
+
+}
+.CircularProgressbar-trail{
+    stroke: rgba(0,0,0,0.4) !important; 
+}
+.CircularProgressbar-text{ 
+    fill: #000 !important; 
+}
+.CircularProgressbar-background{ 
+    fill: #fff !important; 
+}
+.progress-bar{
+    background: transparent !important;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.skills-title{
+    overflow: hidden;
+}
+.row{
+    margin: 20px auto;
+}
+.other-skills{
+    margin: 50px auto;
+    margin-bottom: 100px;
+    padding-top: 50px;
+}
+.hexagon {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 140px;
+    transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    overflow: hidden;
+    visibility: hidden;
+
+  }
+  .hexagon-inside{
+    width: 100%;
+    height: 100%;
+    background: green;
+    transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    overflow: hidden;
+  }
+  
+  .hexagon-image{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background-color: #ABB7B7;
+      transform: rotate(-60deg);
+      -moz-transform: rotate(-60deg);
+      -ms-transform: rotate(-60deg);
+      -o-transform: rotate(-60deg);
+      -webkit-transform: rotate(-60deg);
+      visibility: visible;
+    }
+    .hexagon:nth-child(2n) .hexagon-image{
+        background-color: #e1b53c;;
+    }
+    .hexagon:nth-child(3n) .hexagon-image{
+        background-color:  #6C7A89;
+    }
+    .hex-second-layer .hexagon:first-child .hexagon-image{
+        background-color:  #6C7A89;
+    }
+    .hex-second-layer .hexagon:nth-child(2) .hexagon-image{
+        background-color:  #e1b53c;
+    }
+    .hex-second-layer .hexagon:nth-child(3) .hexagon-image{
+        background-color:  #ABB7B7;
+    }
+    .other-skills .hexagon:not(:first-child){
+        margin-left: -115px;
+    }
+    .other-skills h2{
+        margin: 50px auto;
+        color: #e1b53c;
+    }
+    .hex-content{
+        transform: rotate(120deg);
+        -moz-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+        -o-transform: rotate(120deg);
+        -webkit-transform: rotate(120deg);
+        color: #fff;
+    }
+    .icons-span{
+        font-family: 'Open Sans', sans-serif;
+    }
+    @media only screen and (max-width: 600px) {
+        .other-skills .hexagon{
+            margin: 0 auto;
+        }
+        .other-skills .hexagon:nth-child(even):after{
+            content: '';
+            display: block;
+        }
+        .hexagon {
+            width: 200px;
+            height: 100px;
+        }
+        .other-skills .hexagon:not(:first-child){
+            margin-left: -80px;
+        }
+    }
