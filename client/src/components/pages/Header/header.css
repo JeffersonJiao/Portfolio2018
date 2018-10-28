@@ -49,10 +49,11 @@
     font-size:1rem;
     font-family: 'Open Sans', sans-serif !important;
     transform: rotate(90deg);
+    transition: 0.3s ease;
 }
 .header-wrapper h4:hover{
     letter-spacing: 8px;
-     margin-left: -120px; 
+     margin-left: -122px; 
 }
 .header-inside{
     margin-top: 100px;

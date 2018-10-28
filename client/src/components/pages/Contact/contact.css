@@ -29,8 +29,15 @@ label{
 }
 .underlined {
     border: 0 !important;
-    outline: 0 !important   ;
+    outline: 0 !important;
     background: transparent !important;
     border-bottom: 1px solid #e1b53c !important;
     border-radius: 0!important;
   }
+  input:focus { 
+    outline: 0 !important;
+}
+.form-error{
+    margin: 10px 0;
+    padding: 10px 0;
+}
